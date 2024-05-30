@@ -3,9 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bajana Ilunga's CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77A6B6 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .showcase {
+            min-height: 400px;
+            background: #35424a;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .showcase h1 {
+            font-size: 55px;
+            margin-top: 100px;
+        }
+        section {
+            padding: 20px;
+        }
+        .profile, .education, .languages, .subjects {
+            margin-bottom: 20px;
+        }
+        .profile img {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .profile p {
+            clear: both;
+        }
+        .section-title {
+            color: #333;
+            text-transform: uppercase;
+            font-size: 20px;
+            border-bottom: 2px solid #77A6B6;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <div class="container">
+            <h1>{{user.hed}}</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section class="profile">
+            <img src="{{user.photo}}" alt="Bajana Ilunga's Photo">
+            <h2>{{user.title}}</h2>
+            <p><strong>{{user.name}}</strong> {{user.fullName}}</p>
+            <p><strong>{{user.num}}</strong> {{user.phone}}</p>
+            <p><strong>{{user.em}}</strong> {{user.email}}</p>
+            <p><strong>{{user.add}}</strong> {{user.Address}}</p>
+            <p><strong>{{user.des}}</strong> {{user.Decription}}</p>
+        </section>
+
+        <section class="education">
+            <h2 class="section-title">{{education.title}}</h2>
+            <p><strong>{{education.inst}}</strong> {{education.institutionName}}</p>
+            <p> <strong>{{education.description}}</strong>{{education.Course}}</p>
+            <p><strong>{{education.studyTime}}</strong> {{education.name}}</p>
+            <p><strong>{{education.thesummary}}</strong>{{education.Summary}}</p>
+        </section>
+
+        <section class="languages">
+            <h2 class="section-title">{{foreignLanguage.title}}</h2>
+            <ol>
+                <li>{{foreignLanguage.language}}</li>
+                <li>{{foreignLanguage.language2}}</li>
+                <li>{{foreignLanguage.language3}}</li>
+            </ol>
+        </section>
+        <section class="subjects">
+            <h2 class="section-title">{{Skills.title}}</h2>
+            <ul>
+                <li>
+                    <strong>{{Skills.tec}}</strong> {{Skills.TechnicalSkills}}
+                </li>
+                <li>
+                    <strong>{{Skills.met}} </strong> {{Skills.Methodologies}}
+                </li>
+                <li>
+                    <strong>{{Skills.soft}}</strong> {{Skills.SoftSkills}}
+                </li>
+            </ul>
+        </section>
+        <section class="references">
+            <h2 class="section-title">{{references.title}}</h2>
+            <p>{{references.themessage}}</p>
+            
+        </section>
+    </div>
 </body>
 </html>

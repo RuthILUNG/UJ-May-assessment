@@ -1,38 +1,48 @@
 {
     "user" : {
-        "fullName" : "",
-        "photo" : "",
-        "phone" : "",
-        "email" : ""
+        "hed":"Bajana Ilunga",
+        "title":"Contact Information",
+        "name":"FullName: ",
+        "fullName" : "Bajana Ilunga ",
+        "photo" : "./bajana pic.jpeg",
+        "phone" : "0786266114",
+        "num":"PhoneNumber :",
+        "em":"email :",
+        "email" : "rilunga323@gmail.com",
+        "add":"Address :",
+        "Address":"27 Side Road Chirsville West turfontein",
+        "des":"Profile",
+        
+        "Decription": "BCOM Information System graduate from the University of Johannesburg. Skilled coder and website developer proficient in various programming languages.Known for translating conceptual ideas into functional and visually appealing websites. Experienced in collaborative teamwork, fostering open communication.Eager to contribute coding expertise and grow professionally in a dynamic organization"
     },
     "education" : {
-        "institutionName" : "",
-        "photo" : "",
-        "description" : ""
+        "title":"Education",
+        "institutionName" : "University of Johannesburg :",
+        "inst":"University Name",
+        "Course" : "Information Systems",
+        "description" : "Course: ",
+        "studyTime":"Highschool :",
+        "name":"William Hills high school",
+        "thesummary":"Summary:   ",
+        "Summary":"Matriculated with a bachelor pass in 2020"
     },
     "foreignLanguage" : {
-        "language" : "",
-        "phrases" : [{
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        },
-        {
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
-        }]
+        "title":"foreignLanguage",
+        "language" : "French",
+        "language2":"English",
+        "language3":"Swahili"
     },
-    "favouriteSubjects" : [
-        {
-            "name" : "",
-            "description" : ""
-        },
-        {
-            "name" : "",
-            "description" : ""
-        },
-        {
-            "name" : "",
-            "description" : ""
-        }
-    ]
+    "Skills":
+    { "title":"SKills",
+    "tec":"Technical Skills :  ",
+    "TechnicalSkills": "Asp.net (C #. ), C #. , CSS, HTML, SQL, WinForms (C #. ), Web Forms (C #. ),Bootstrap, PYTHON, Visual Basic, Figma,unity,Database Administration and Development. Microsoft: Word, Access, Excel, PowerPoint",
+    "met":"Methodologies : ",
+    "Methodologies":"Agile Practices,Scrum Techniques,Kanban Board Management ",
+    "soft : ":"SoftSkills",
+    "SoftSkills":"Communication ,Teamwork, Adaptability ,Problem-solving, Time management, Conflict resolution, Creativity, Critical thinking"
+    },
+"references": {
+    "title":"References",
+    "themessage":"Available upon request"
+}
 }
